@@ -1,0 +1,113 @@
+.home-container {
+  position: relative;
+  height: 550px;
+  background-image: url('./images/back.svg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    height: 540px;
+  }
+
+  @media (max-width: 360px) {
+    height: 360px;
+  }
+}
+
+.centered-content {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1;
+
+  @media (max-width: 768px) {
+    bottom: 15px;
+  }
+
+  @media (max-width: 360px) {
+    bottom: 10px;
+  }
+}
+
+.text-block {
+  margin-bottom: 300px; // Space between text and button
+  margin-right: 300px;
+  width:  180px;
+  text-align: left;
+  
+
+ 
+
+  strong {
+    font-size: 18px;
+    display: block; // To ensure it takes full width
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    width: 150px;
+  }
+
+  @media (max-width: 360px) {
+    width: 120px;
+    margin-right: 130px;
+    margin-bottom: 140px;
+    p{
+      font-size: 12px;
+    }
+  }
+}
+
+.start-learning-button {
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.4), 0 0 4px rgba(255, 0, 0, 0.1);
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 360px) {
+    padding: 8px 1px;
+    font-size: 14px;
+    
+  }
+}
+
+.large-image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 560px;
+  z-index: 0;
+
+  @media (max-width: 768px) {
+    height: 500px;
+  }
+
+  @media (max-width: 360px) {
+    height: 300px;
+    margin-left: 75px;
+  }
+}
+
+

@@ -1,0 +1,148 @@
+.vacancies-container {
+  text-align: center;
+  padding: 20px;
+
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 16px;
+    color: #666;
+  }
+
+  .location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    font-size: 18px;
+    color: #333;
+
+    i {
+      margin: 0 5px;
+    }
+
+    .react-select__control {
+      min-height: 30px;
+      height: 30px;
+      border-radius: 4px;
+      border-color: #ddd;
+    }
+
+    .react-select__dropdown-indicator {
+      padding: 0 8px;
+    }
+
+    .react-select__clear-indicator {
+      padding: 0 8px;
+    }
+
+    .react-select__value-container {
+      height: 30px;
+      padding: 0 8px;
+    }
+
+    .react-select__input {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .vacancy-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-content: center;
+
+    .vacancy-card {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 100%;
+      max-width: 300px;
+      text-align: left;
+
+      h2 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #999;
+        margin-bottom: 20px;
+      }
+
+      .learn-button {
+        background-color: #ff0000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+
+        &:hover {
+          background-color: #cc0000;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .vacancy-cards {
+      grid-template-columns: 1fr;
+      gap: 10px;
+
+      .vacancy-card {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .location {
+      font-size: 16px;
+    }
+
+    .vacancy-cards {
+      gap: 10px;
+
+      .vacancy-card {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+
+        h2 {
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+
+        .learn-button {
+          padding: 8px 16px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

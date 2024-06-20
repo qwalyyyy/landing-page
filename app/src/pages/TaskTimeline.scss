@@ -1,0 +1,196 @@
+.timeline-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 0 auto;
+  background: white;
+  margin-top: 10px;
+
+}
+
+.job-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.job-description {
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 2px;
+  height: 100%;
+  background: red;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-item .circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  left: 13px;
+  top: 0;
+}
+
+.timeline-item .content {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  width: calc(100% - 40px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-left: 30px;
+}
+
+.timeline-item.completed .circle {
+  border: 2px solid red;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+}
+
+.timeline-item.checking .circle {
+  background-color: red;
+}
+
+.task-title {
+  font-size: 16px;
+  margin: 0 0 5px 0;
+}
+
+.task-status,
+.task-description {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.view-task,
+.task-checking {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+}
+
+.task-checking {
+  background-color: red;
+  color: white;
+}
+
+.completed-task {
+  background-color: #f9f9f9;
+  cursor: default;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  max-width: 90%;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+}
+
+.modal-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+textarea {
+  width: 100%;
+  height: 60px;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-button {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 10px;
+  }
+
+  .task-title {
+    font-size: 14px;
+  }
+
+  .view-task,
+  .task-checking {
+    padding: 8px;
+  }
+}

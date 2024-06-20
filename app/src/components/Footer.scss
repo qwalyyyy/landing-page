@@ -1,0 +1,49 @@
+.footer {
+  background-color: red; 
+  height: 80px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+
+    p {
+      margin: 0; 
+      color: white; 
+      font-size: 16px; /* Исходный размер текста */
+
+      @media (max-width: 768px) { 
+        font-size: 14px; /* Размер текста для экранов до 768px */
+      }
+
+      @media (max-width: 576px) { 
+        font-size: 12px; /* Размер текста для экранов до 576px */
+      }
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+      gap: 20px; 
+
+      .icon-link {
+        color: white; 
+
+        .icon {
+          font-size: 32px; 
+
+          @media (max-width: 768px) { 
+            font-size: 24px; 
+          }
+
+          @media (max-width: 576px) { 
+            font-size: 20px; 
+          }
+        }
+      }
+    }
+  }
+}
