@@ -5,7 +5,7 @@
   margin: 0 auto;
   background: white;
   margin-top: 10px;
-
+  padding-bottom: 97px; 
 }
 
 .job-title {
@@ -112,7 +112,7 @@
   cursor: default;
 }
 
-/* Modal Styles */
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -183,6 +183,10 @@ textarea {
 @media (max-width: 600px) {
   .content {
     padding: 10px;
+  }
+  .timeline-container {
+   
+    padding-bottom: 128px; 
   }
 
   .task-title {

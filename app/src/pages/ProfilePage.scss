@@ -4,7 +4,7 @@
     align-items: center;
     height: 100vh;
     background-color: #f8f9fa;
-    padding: 0 20px; /* Added padding for better spacing on mobile */
+    padding: 0 20px; 
   
     .auth-button {
       background: linear-gradient(to right, #ff4b5c, #ff7e8a);
@@ -45,7 +45,21 @@
       justify-content: center;
       align-items: center;
       z-index: 1000;
-      padding: 20px; /* Added padding for better spacing on mobile */
+      padding: 20px; 
+
+      .HomeButton {
+        text-decoration: none;
+        padding: 10px 20px; /* Adjust padding as needed */
+        display: inline-block;
+        background-color: red; /* Example background color */
+        color: white; /* Example text color */
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .HomeButton:hover {
+        background-color: red; /* Example hover background color */
+      }
   
       .modal-content {
         background: #ffffff;

@@ -33,17 +33,14 @@
 }
 
 .text-block {
-  margin-bottom: 300px; // Space between text and button
+  margin-bottom: 300px; 
   margin-right: 300px;
   width:  180px;
   text-align: left;
-  
-
- 
 
   strong {
     font-size: 18px;
-    display: block; // To ensure it takes full width
+    display: block; 
     margin-bottom: 5px;
   }
 
@@ -51,7 +48,7 @@
     font-size: 16px;
     margin: 0;
   }
-  
+
   @media (max-width: 768px) {
     width: 150px;
   }
@@ -60,7 +57,7 @@
     width: 120px;
     margin-right: 130px;
     margin-bottom: 140px;
-    p{
+    p {
       font-size: 12px;
     }
   }
@@ -75,9 +72,16 @@
   border-radius: 5px;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(255, 0, 0, 0.4), 0 0 4px rgba(255, 0, 0, 0.1);
+  user-select: none; 
+  outline: none; 
+  text-decoration: none;
 
   &:hover {
     background-color: #f0f0f0;
+  }
+
+  &:focus {
+    outline: none; 
   }
 
   @media (max-width: 768px) {
@@ -88,7 +92,6 @@
   @media (max-width: 360px) {
     padding: 8px 1px;
     font-size: 14px;
-    
   }
 }
 
@@ -109,5 +112,3 @@
     margin-left: 75px;
   }
 }
-
-

@@ -51,7 +51,7 @@
   }
 
   .vacancy-cards {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     justify-content: center;
@@ -99,6 +99,7 @@
     .vacancy-cards {
       grid-template-columns: 1fr;
       gap: 10px;
+      display: grid;
 
       .vacancy-card {
         width: 100%;
